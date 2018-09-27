@@ -35,9 +35,9 @@ public class CreateCoursesAndReviewDemo
 			Course course = new Course("Pinball wizzard");			
 			
 			
-			course.add(new Review("Best course ever"));
-			course.add(new Review("Amazing pinball course"));
-			course.add(new Review("I now own a pinball table because of this course"));
+			course.addReview(new Review("Best course ever"));
+			course.addReview(new Review("Amazing pinball course"));
+			course.addReview(new Review("I now own a pinball table because of this course"));
 			
 			//save the course and leverage the cascade all
 			System.out.println("Saving Course: "+course);
