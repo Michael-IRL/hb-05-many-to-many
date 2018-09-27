@@ -3,7 +3,6 @@ package ie.bitterCoffee.hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
 
 import ie.bitterCoffee.hibernate.entity.Course;
 import ie.bitterCoffee.hibernate.entity.Instructor;
@@ -34,8 +33,8 @@ public class GetCoursesForMaryDemo
 			//start a transaction
 			session.beginTransaction();
 			
-			//get mary from databasae
-			int studentId = 2;
+			//get Mary from database
+			int studentId = 1;
 			Student student = session.get(Student.class, studentId);
 			
 			System.out.println("\nLoaded student: "+student);
